@@ -5,28 +5,28 @@ const router = express.Router();
 //@desc   Get all users contacts 
 //@access Private
 router.get('/', (req, res) => {
-    res.send('Add contact');
+    res.send('Get all contacts');
 });
 
 //@route  POST api/contacts
 //@desc   Get all users contacts 
 //@access Private
 router.post('/', (req, res) => {
-    res.send('Add contact');
+    res.send('Add contacts');
 });
 
 //@route  PUT api/contacts/:id
 //@desc   Update contacts 
 //@access Private
 router.put('/:id', (req, res) => {
-    res.send('update contact');
+    res.send('Update contacts');
 });
 
 //@route  DELETE api/contacts
 //@desc   Get all users contacts 
 //@access Private
 router.delete('/:id', (req, res) => {
-    res.send('Remove contact');
+    res.send('Delete contacts');
 });
 
 
