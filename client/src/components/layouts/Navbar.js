@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from 'react';
 import AuthContext from '../../context/auth/authContext';
-import ContactContext from '../../context/contact/contactContext';
+import ContactContext from '../../context/contact/ContactContext';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 

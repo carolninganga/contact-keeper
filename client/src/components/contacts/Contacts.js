@@ -1,6 +1,6 @@
 import React, { Fragment, useContext, useEffect } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import ContactContext from '../../context/contact/contactContext';
+import ContactContext from '../../context/contact/ContactContext';
 import Spinner from '../layouts/Spinner';
 import ContactItem from './ContactItem';
 
