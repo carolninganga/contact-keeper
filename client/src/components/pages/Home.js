@@ -9,7 +9,7 @@ import AuthContext from '../../context/auth/authContext';
 
      useEffect(() => {
          authContext.loadUser();
-         // eslint-disable-next-line
+         // eslint-disable-next-line-next
      }, []);
 
 
