@@ -8,9 +8,6 @@ require("./config/db")();
 app.use(express.json({ extended: false }));
 app.use(express.json())
 
-app.get("/", (req, res) =>
-  res.json({ msg: "Welcome to the ContactKeeper API..." })
-);
 
 //app.get('/test', (req, res) => res.json({ msg: 'test' }));
 //app.get('/login', (req, res) => res.json({ msg: 'test' }));
