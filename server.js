@@ -6,8 +6,7 @@ require("./config/db")();
 
 //Init Middleware
 app.use(express.json({ extended: false }));
-app.use(express.json())
-
+app.use(express.json());
 
 //app.get('/test', (req, res) => res.json({ msg: 'test' }));
 //app.get('/login', (req, res) => res.json({ msg: 'test' }));
@@ -20,10 +19,10 @@ app.use("/api/contacts", require("./routes/contacts"));
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 
-  // const path = require("path");
-  //   app.get("*", (req, res) => {
-  //     res.sendfile(path.resolve(__dirname, "client", "build", "index.html"));
-  //   });
+  const path = require("path");
+  app.get("*", (req, res) => {
+    res.sendfile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
 }
 
 const PORT = process.env.PORT || 5000;
